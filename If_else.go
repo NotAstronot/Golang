@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 
+	//Seleksi Kondisi Menggunakan Keyword if, else if, & else
 	var point = 5
 
 	if point == 10 {
@@ -16,10 +17,7 @@ func main() {
 		fmt.Println("tidak lulus: ", point)
 	}
 
-	/*
-		Variabel Temporary Pada if - else
-	*/
-
+	// Variabel Temporary Pada if - else
 	var nilai = 8559.0
 
 	if nilai := nilai / 100; nilai >= 100 {
@@ -29,5 +27,4 @@ func main() {
 	} else {
 		fmt.Println("not bad", nilai)
 	}
-
 }
