@@ -20,6 +20,10 @@ func main() {
 	// Jika dikurangkan
 	j--
 	fmt.Println(j)
+
+	var value = (((2+6)%3)*4 - 2) / 3
+
+	fmt.Println(value)
 }
 
 /* (+) adalah penjumlahan
