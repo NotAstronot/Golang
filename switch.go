@@ -14,7 +14,7 @@ func main() {
 	} else if point == 4 {
 		fmt.Println("hampir lulus")
 	} else {
-		fmt.Println("tidak lulus:", point)
+		fmt.Println("tidak lulus:", point, "\n")
 	}
 
 	// Variabel Temporary Pada if - else
@@ -23,7 +23,7 @@ func main() {
 	if nilai := nilai / 100; nilai >= 100 {
 		fmt.Println("perfect", nilai)
 	} else if nilai >= 70 {
-		fmt.Println("good", nilai)
+		fmt.Println("good", nilai, "\n")
 	} else {
 		fmt.Println("not bad", nilai)
 	}
@@ -33,7 +33,7 @@ func main() {
 
 	switch pointKedua {
 	case 8:
-		fmt.Println("perfect")
+		fmt.Println("perfect \n")
 	case 7:
 		fmt.Println("awesome")
 	default:
@@ -51,7 +51,7 @@ func main() {
 	default:
 		{
 			fmt.Println("not bad")
-			fmt.Println("you can be better!")
+			fmt.Println("you can be better! \n")
 		}
 	}
 
@@ -62,7 +62,7 @@ func main() {
 	case angka == 8:
 		fmt.Println("perfect")
 	case (angka < 8) && (angka > 3):
-		fmt.Println("awesome")
+		fmt.Println("awesome \n")
 	default:
 		{
 			fmt.Println("not bad")
@@ -71,5 +71,43 @@ func main() {
 	}
 
 	// Penggunaan Keyword fallthrough Dalam switch
+	var dapatAngka = 8
 
+	switch {
+	case dapatAngka == 8:
+		fmt.Println("perfect \n")
+	case (dapatAngka < 8) && (dapatAngka > 3):
+		fmt.Println("awesome")
+		fallthrough
+	case dapatAngka < 5:
+		fmt.Println("you can learn more")
+	default:
+		{
+			fmt.Println("not bad")
+			fmt.Println("you can learn more")
+		}
+	}
+
+	// Seleksi Kondisi Bersarang
+	var pointPertama = 0
+
+	if pointPertama > 7 {
+		switch pointPertama {
+		case 4:
+			fmt.Println("perfect!")
+		default:
+			fmt.Println("nice!")
+		}
+	} else {
+		if pointPertama == 5 {
+			fmt.Println("not bad!")
+		} else if pointPertama == 3 {
+			fmt.Println("keep trying")
+		} else {
+			fmt.Println("you can do it")
+			if pointPertama == 0 {
+				fmt.Println("try harder")
+			}
+		}
+	}
 }
