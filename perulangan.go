@@ -79,5 +79,14 @@ func main() {
 	}
 
 	// Pemanfaatan Label Dalam Perulangan
+outerLoop:
+	for d := 0; d < 5; d++ {
+		for e := 0; e < 5; e++ {
+			if d == 3 {
+				break outerLoop
+			}
+			fmt.Println("matriks [", d, "][", e, "]", "\n")
+		}
+	}
 
 }

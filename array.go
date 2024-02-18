@@ -13,7 +13,7 @@ func main() {
 	fmt.Println(names[1])
 	fmt.Println(names[2])
 
-	// array secara langsung
+	// Inisialisasi Nilai Awal Array Tanpa Jumlah Elemen
 
 	var values = [...]int{
 		90, 80, 70, 80, 20}
@@ -24,6 +24,22 @@ func main() {
 	fmt.Println(values[2])
 
 	fmt.Println(len(values))
+
+	//Inisialisasi Nilai Awal Array
+
+	var fruits = [4]string{"apple", "orange", "banana", "melon"}
+
+	fmt.Println("Jumlah Element \t\t", len(fruits))
+	fmt.Println("Isi semua element \t", fruits)
+
+	// Array Multidimensi
+	var numbers1 = [2][3]int{[3]int{3, 2, 3}, [3]int{3, 4, 4}}
+	var numbers2 = [2][3]int{{3, 2, 3}, {3, 4, 5}}
+
+	fmt.Println("numbers1", numbers1)
+	fmt.Println("numbers2", numbers2)
+
+	//
 }
 
 /*
