@@ -56,4 +56,28 @@ func main() {
 	for range kvs {
 		fmt.Println("Done")
 	}
+
+	// Penggunaan Keyword break & continue
+	for a := 1; a <= 10; a++ {
+		if a%2 == 1 {
+			continue
+		}
+		if a > 8 {
+			break
+		}
+
+		fmt.Println("Hasil", a)
+	}
+
+	// Perulangan Bersarang
+
+	for b := 0; b < 5; b++ {
+		for c := b; c < 5; c++ {
+			fmt.Println(c, "")
+		}
+		fmt.Println()
+	}
+
+	// Pemanfaatan Label Dalam Perulangan
+
 }
