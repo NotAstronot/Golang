@@ -39,7 +39,26 @@ func main() {
 	fmt.Println("numbers1", numbers1)
 	fmt.Println("numbers2", numbers2)
 
-	//
+	//Perulangan Elemen Array Menggunakan Keyword for
+	var buah = [4]string{"apple", "orange", "banana", "melon"}
+
+	for i := 0; i < len(buah); i++ {
+		fmt.Println("elements", i, buah[i])
+	}
+
+	//Perulangan Elemen Array Menggunakan Keyword for - range
+	var buah2 = [4]string{"apple", "orange", "banana", "semangka"}
+
+	for i, buah2 := range buah2 {
+		fmt.Println("elements", i, buah2)
+	}
+
+	//Penggunaan Variabel Underscore _ Dalam for - range
+	var buah3 = [4]string{"apple", "orange", "banana", "semangka"}
+
+	for _, buah4 := range buah3 {
+		fmt.Println("nama", buah4)
+	}
 }
 
 /*
