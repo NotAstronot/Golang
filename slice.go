@@ -39,6 +39,12 @@ func main() {
 	fmt.Println(aaSlice)
 	fmt.Println(bbSlice)
 
+	// Fungsi len()
+	var slice4 = []string{"apple", "grape", "banana", "melon"}
+	fmt.Println(len(slice4))
+
+	//Fungsi cap()
+
 }
 
 /*
