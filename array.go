@@ -58,7 +58,20 @@ func main() {
 
 	for _, buah4 := range buah3 {
 		fmt.Println("nama", buah4)
+		//Jika yang dibutuhkan hanya indeks elemen-nya saja, bisa gunakan 1 buah variabel setelah keyword for.
+		/*for i, _ := range buah buah3{ }
+		atau
+		for i := range buah3{ }
+		*/
+
 	}
+
+	//Alokasi Elemen Array Menggunakan Keyword make
+
+	var buah5 = make([]string, 2)
+	buah5[0] = "apple"
+	buah5[1] = "manggo"
+	fmt.Println(buah5) //[apple mango ]
 }
 
 /*
