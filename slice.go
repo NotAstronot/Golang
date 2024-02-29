@@ -44,6 +44,41 @@ func main() {
 	fmt.Println(len(slice4))
 
 	//Fungsi cap()
+	var slice5 = []string{"apple", "grape", "banana", "melon"}
+	fmt.Println(len(slice5))
+	fmt.Println(cap(slice5))
+
+	var aSlice5 = slice5[0:3]
+	fmt.Println(len(aSlice5))
+	fmt.Println(cap(aSlice5))
+
+	var bSlice5 = slice5[1:4]
+	fmt.Println(len(bSlice5))
+	fmt.Println(cap(bSlice5))
+
+	// Fungsi append()
+	var slice6 = []string{"apple", "grape", "banana"}
+	var cSlice = append(slice6, "pepaya")
+
+	fmt.Println(slice6)
+	fmt.Println(cSlice)
+
+	// agar lebih jelas perhatikan contoh dibawah ini
+
+	var slice7 = []string{"apple", "grape", "banana"}
+	var dSlice = slice7[0:2]
+
+	fmt.Println(cap(slice7))
+	fmt.Println(len(dSlice))
+
+	fmt.Println(slice7)
+	fmt.Println(dSlice)
+
+	var eSlice = append(dSlice, "pepaya")
+
+	fmt.Println(slice7)
+	fmt.Println(dSlice)
+	fmt.Println(eSlice)
 
 }
 
