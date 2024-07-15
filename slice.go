@@ -80,6 +80,8 @@ func main() {
 	fmt.Println(dSlice)
 	fmt.Println(eSlice)
 
+	// Fungsi copy()
+
 }
 
 /*
