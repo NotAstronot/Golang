@@ -81,6 +81,17 @@ func main() {
 	fmt.Println(eSlice)
 
 	// Fungsi copy()
+	// Fungsi copy() digunakan untuk men-copy elements slice pada src (parameter ke-2), ke dst (parameter pertama).
+
+	// copy(dst, src)
+
+	dst := make([]string, 3)
+	src := []string{"watermelon", "pinnaple", "apple", "orange"}
+	n := copy(dst, src)
+
+	fmt.Println(dst) // watermelon pinnaple apple
+	fmt.Println(src) // watermelon pinnaple apple orange
+	fmt.Println(n)   // 3
 
 }
 
