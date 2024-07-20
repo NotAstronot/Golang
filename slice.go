@@ -93,6 +93,32 @@ func main() {
 	fmt.Println(src) // watermelon pinnaple apple orange
 	fmt.Println(n)   // 3
 
+	dst1 := []string{"potato", "potato2", "potato3"}
+	src1 := []string{"watermelon", "pinnaple", "apple"}
+	n1 := copy(dst1, src1)
+
+	fmt.Println(dst1) // [watermelon pinnaple potato]
+	fmt.Println(src1) //  [watermelon pinnaple]
+	fmt.Println(n1)   // 2
+
+	// Pengaksesan Elemen Slice Dengan 3 Indeks
+
+	var buah = []string{"apple", "garpe", "banana"}
+	var abuah = buah[0:2]
+	var bbuah = buah[0:2:2]
+
+	fmt.Println(buah)      // ["apple", "grape", "banana"]
+	fmt.Println(len(buah)) // len: 3
+	fmt.Println(cap(buah)) // cap: 3
+
+	fmt.Println(abuah)      // ["apple", "grape"]
+	fmt.Println(len(abuah)) // len: 2
+	fmt.Println(cap(abuah)) // cap: 3
+
+	fmt.Println(bbuah)      // ["apple", "grape"]
+	fmt.Println(len(bbuah)) // len: 2
+	fmt.Println(cap(bbuah)) // cap: 2
+
 }
 
 /*
